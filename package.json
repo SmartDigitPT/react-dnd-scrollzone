@@ -1,5 +1,5 @@
 {
-  "name": "@nosferatu500/react-dnd-scrollzone",
+  "name": "@marciocamello/react-dnd-scrollzone",
   "version": "3.0.0",
   "description": "A cross browser solution to scrolling during drag and drop.",
   "main": "./index.js",
@@ -21,7 +21,6 @@
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --write '{src,test}/**/*.{ts, tsx}'",
     "lint": "yarn prettier && eslint '{src,test}/**/*.{ts,tsx}'",
-    "postbuild": "rimraf dist/tests.d.ts && shx cp -r dist/*.d.ts dist/esm && shx mv dist/* dist && shx cp package.json README.md LICENSE dist && json -I -f dist/package.json -e \"this.private=false; this.devDependencies=undefined; this.optionalDependencies=undefined; this.scripts=undefined; this.prettier=undefined; this.jest=undefined; this['lint-staged']=undefined;\"",
     "publish:alpha": "yarn test && yarn build && npm publish --tag alpha",
     "publish:beta": "yarn test && yarn build && npm publish --tag beta",
     "publish:release": "yarn test && yarn build && npm publish"
@@ -39,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nosferatu500/react-dnd-scrollzone"
+    "url": "https://github.com/SmartDigitPT/react-dnd-scrollzone"
   },
   "bugs": {
-    "url": "https://github.com/nosferatu500/react-dnd-scrollzone/issues"
+    "url": "https://github.com/SmartDigitPT/react-dnd-scrollzone/issues"
   },
   "publishConfig": {
     "access": "public"
